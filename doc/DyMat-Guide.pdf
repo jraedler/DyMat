@@ -1,0 +1,1144 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+% 'BasicFonts': class PDFDictionary 
+1 0 obj
+% The standard fonts dictionary
+<< /F1 2 0 R
+ /F2 3 0 R
+ /F3 32 0 R >>
+endobj
+% 'F1': class PDFType1Font 
+2 0 obj
+% Font Helvetica
+<< /BaseFont /Helvetica
+ /Encoding /WinAnsiEncoding
+ /Name /F1
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F2': class PDFType1Font 
+3 0 obj
+% Font Helvetica-Bold
+<< /BaseFont /Helvetica-Bold
+ /Encoding /WinAnsiEncoding
+ /Name /F2
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Annot.NUMBER1': class LinkAnnotation 
+4 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 516.0236
+ 0 ]
+ /Rect [ 62.69291
+ 657.7736
+ 121.0629
+ 669.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER2': class LinkAnnotation 
+5 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 516.0236
+ 0 ]
+ /Rect [ 527.0227
+ 657.7736
+ 532.5827
+ 669.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER3': class LinkAnnotation 
+6 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 363.0236
+ 0 ]
+ /Rect [ 62.69291
+ 639.7736
+ 169.9429
+ 651.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER4': class LinkAnnotation 
+7 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 363.0236
+ 0 ]
+ /Rect [ 527.0227
+ 639.7736
+ 532.5827
+ 651.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER5': class LinkAnnotation 
+8 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 300.0236
+ 0 ]
+ /Rect [ 62.69291
+ 621.7736
+ 144.3929
+ 633.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER6': class LinkAnnotation 
+9 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 300.0236
+ 0 ]
+ /Rect [ 527.0227
+ 621.7736
+ 532.5827
+ 633.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER7': class LinkAnnotation 
+10 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 189.0236
+ 0 ]
+ /Rect [ 62.69291
+ 603.7736
+ 129.3829
+ 615.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER8': class LinkAnnotation 
+11 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 189.0236
+ 0 ]
+ /Rect [ 527.0227
+ 603.7736
+ 532.5827
+ 615.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER9': class LinkAnnotation 
+12 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 765.0236
+ 0 ]
+ /Rect [ 62.69291
+ 585.7736
+ 138.2629
+ 597.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER10': class LinkAnnotation 
+13 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 765.0236
+ 0 ]
+ /Rect [ 527.0227
+ 585.7736
+ 532.5827
+ 597.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER11': class LinkAnnotation 
+14 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 732.0236
+ 0 ]
+ /Rect [ 82.69291
+ 567.7736
+ 170.5129
+ 579.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER12': class LinkAnnotation 
+15 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 732.0236
+ 0 ]
+ /Rect [ 527.0227
+ 567.7736
+ 532.5827
+ 579.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER13': class LinkAnnotation 
+16 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 684.0236
+ 0 ]
+ /Rect [ 82.69291
+ 549.7736
+ 189.9629
+ 561.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER14': class LinkAnnotation 
+17 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 684.0236
+ 0 ]
+ /Rect [ 527.0227
+ 549.7736
+ 532.5827
+ 561.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER15': class LinkAnnotation 
+18 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 636.0236
+ 0 ]
+ /Rect [ 62.69291
+ 531.7736
+ 129.9329
+ 543.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER16': class LinkAnnotation 
+19 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 636.0236
+ 0 ]
+ /Rect [ 527.0227
+ 531.7736
+ 532.5827
+ 543.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER17': class PDFDictionary 
+20 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.3ds.com/products/catia/portfolio/dymola) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 411.8747
+ 477.7736
+ 448.5987
+ 489.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER18': class PDFDictionary 
+21 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.openmodelica.org/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 468.1127
+ 477.7736
+ 532.5287
+ 489.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER19': class PDFDictionary 
+22 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.python.org/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 83.4304
+ 465.7736
+ 114.5604
+ 477.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER20': class PDFDictionary 
+23 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.mathworks.com/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 303.1703
+ 423.7736
+ 343.1803
+ 435.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER21': class LinkAnnotation 
+24 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 639.5236
+ 0 ]
+ /Rect [ 446.2229
+ 393.7736
+ 496.2529
+ 405.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER22': class LinkAnnotation 
+25 0 obj
+<< /Border [ 0
+ 0
+ 0 ]
+ /Contents ()
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 768.5236
+ 0 ]
+ /Rect [ 381.7229
+ 375.7736
+ 439.5129
+ 387.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER23': class PDFDictionary 
+26 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (mailto:joerg@j-raedler.de) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 246.5808
+ 324.7736
+ 329.5308
+ 336.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER24': class PDFDictionary 
+27 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.opensource.org/licenses/bsd-license.php) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 62.69291
+ 312.7736
+ 120.4929
+ 324.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER25': class PDFDictionary 
+28 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.python.org/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 85.69291
+ 252.7736
+ 119.6029
+ 264.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER26': class PDFDictionary 
+29 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.scipy.org/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 85.69291
+ 234.7736
+ 532.5827
+ 246.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER27': class PDFDictionary 
+30 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://www.pythonxy.org/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 375.5012
+ 213.7736
+ 424.9612
+ 225.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER28': class PDFDictionary 
+31 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://docs.python.org/library/distutils.html) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 211.9095
+ 150.7736
+ 248.1928
+ 162.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'F3': class PDFType1Font 
+32 0 obj
+% Font Courier
+<< /BaseFont /Courier
+ /Encoding /WinAnsiEncoding
+ /Name /F3
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Page1': class PDFPage 
+33 0 obj
+% Page dictionary
+<< /Annots [ 4 0 R
+ 5 0 R
+ 6 0 R
+ 7 0 R
+ 8 0 R
+ 9 0 R
+ 10 0 R
+ 11 0 R
+ 12 0 R
+ 13 0 R
+ 14 0 R
+ 15 0 R
+ 16 0 R
+ 17 0 R
+ 18 0 R
+ 19 0 R
+ 20 0 R
+ 21 0 R
+ 22 0 R
+ 23 0 R
+ 24 0 R
+ 25 0 R
+ 26 0 R
+ 27 0 R
+ 28 0 R
+ 29 0 R
+ 30 0 R
+ 31 0 R ]
+ /Contents 47 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 46 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'Page2': class PDFPage 
+34 0 obj
+% Page dictionary
+<< /Contents 48 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 46 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'R35': class PDFCatalog 
+35 0 obj
+% Document Root
+<< /Outlines 37 0 R
+ /PageLabels 49 0 R
+ /PageMode /UseNone
+ /Pages 46 0 R
+ /Type /Catalog >>
+endobj
+% 'R36': class PDFInfo 
+36 0 obj
+<< /Author ()
+ /CreationDate (D:20110830120805-01'00')
+ /Creator (\(unspecified\))
+ /Keywords ()
+ /Producer (ReportLab PDF Library - www.reportlab.com)
+ /Subject (\(unspecified\))
+ /Title (DyMat - User Manual) >>
+endobj
+% 'R37': class PDFOutlines 
+37 0 obj
+<< /Count 9
+ /First 38 0 R
+ /Last 45 0 R
+ /Type /Outlines >>
+endobj
+% 'Outline.0': class OutlineEntryObject 
+38 0 obj
+<< /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 516.0236
+ 0 ]
+ /Next 39 0 R
+ /Parent 37 0 R
+ /Title (\376\377\0001\000\240\000\240\000\240\000O\000v\000e\000r\000v\000i\000e\000w) >>
+endobj
+% 'Outline.1': class OutlineEntryObject 
+39 0 obj
+<< /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 363.0236
+ 0 ]
+ /Next 40 0 R
+ /Parent 37 0 R
+ /Prev 38 0 R
+ /Title (\376\377\0002\000\240\000\240\000\240\000A\000u\000t\000h\000o\000r\000 \000a\000n\000d\000 \000L\000i\000c\000e\000n\000s\000e) >>
+endobj
+% 'Outline.2': class OutlineEntryObject 
+40 0 obj
+<< /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 300.0236
+ 0 ]
+ /Next 41 0 R
+ /Parent 37 0 R
+ /Prev 39 0 R
+ /Title (\376\377\0003\000\240\000\240\000\240\000D\000e\000p\000e\000n\000d\000e\000n\000c\000i\000e\000s) >>
+endobj
+% 'Outline.3': class OutlineEntryObject 
+41 0 obj
+<< /Dest [ 33 0 R
+ /XYZ
+ 62.69291
+ 189.0236
+ 0 ]
+ /Next 42 0 R
+ /Parent 37 0 R
+ /Prev 40 0 R
+ /Title (\376\377\0004\000\240\000\240\000\240\000I\000n\000s\000t\000a\000l\000l\000a\000t\000i\000o\000n) >>
+endobj
+% 'Outline.4': class OutlineEntryObject 
+42 0 obj
+<< /Count 2
+ /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 765.0236
+ 0 ]
+ /First 43 0 R
+ /Last 44 0 R
+ /Next 45 0 R
+ /Parent 37 0 R
+ /Prev 41 0 R
+ /Title (\376\377\0005\000\240\000\240\000\240\000D\000y\000M\000a\000t\000E\000x\000p\000o\000r\000t) >>
+endobj
+% 'Outline.9.0': class OutlineEntryObject 
+43 0 obj
+<< /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 732.0236
+ 0 ]
+ /Next 44 0 R
+ /Parent 42 0 R
+ /Title (\376\377\0005\000.\0001\000\240\000\240\000\240\000E\000x\000p\000l\000o\000r\000i\000n\000g\000 \000a\000 \000f\000i\000l\000e) >>
+endobj
+% 'Outline.9.1': class OutlineEntryObject 
+44 0 obj
+<< /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 684.0236
+ 0 ]
+ /Parent 42 0 R
+ /Prev 43 0 R
+ /Title (\376\377\0005\000.\0002\000\240\000\240\000\240\000E\000x\000p\000o\000r\000t\000i\000n\000g\000 \000v\000a\000r\000i\000a\000b\000l\000e\000s) >>
+endobj
+% 'Outline.5': class OutlineEntryObject 
+45 0 obj
+<< /Dest [ 34 0 R
+ /XYZ
+ 62.69291
+ 636.0236
+ 0 ]
+ /Parent 37 0 R
+ /Prev 42 0 R
+ /Title (\376\377\0006\000\240\000\240\000\240\000P\000y\000t\000h\000o\000n\000 \000A\000P\000I) >>
+endobj
+% 'R46': class PDFPages 
+46 0 obj
+% page tree
+<< /Count 2
+ /Kids [ 33 0 R
+ 34 0 R ]
+ /Type /Pages >>
+endobj
+% 'R47': class PDFStream 
+47 0 obj
+% page stream
+<< /Length 6641 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 136.5949 0 Td 24 TL /F2 20 Tf 0 0 0 rg (DyMat - User Manual) Tj T* -136.5949 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 195.7574 0 Td 18 TL /F2 15 Tf 0 0 0 rg (version 0.3) Tj T* -195.7574 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 678.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Contents) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 528.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 129 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (1   Overview) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 129 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 111 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (2   Author and License) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 111 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 93 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (3   Dependencies) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 93 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 75 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (4   Installation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 75 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 57 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (5   DyMatExport) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 57 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 39 cm
+q
+BT 1 0 0 1 20 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (5.1   Exploring a file) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 39 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 21 cm
+q
+BT 1 0 0 1 20 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (5.2   Exporting variables) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 21 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (6   Python API) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 3 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 495.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (1   Overview) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 453.0236 cm
+q
+BT 1 0 0 1 0 26 Tm .053984 Tw 12 TL /F1 10 Tf 0 0 0 rg (This package contains some modules to read and process the result files from ) Tj 0 0 .501961 rg (Dymola ) Tj 0 0 0 rg (and ) Tj 0 0 .501961 rg (OpenModelica) Tj T* 0 Tw .177488 Tw 0 0 0 rg (with ) Tj 0 0 .501961 rg (Python) Tj 0 0 0 rg (. A script is included that will help you to browse and export the contents of these files to other) Tj T* 0 Tw (formats.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 411.0236 cm
+q
+BT 1 0 0 1 0 26 Tm .156235 Tw 12 TL /F1 10 Tf 0 0 0 rg (Both simulation systems save their results in regular mat-files, but use a special variable structure to store) Tj T* 0 Tw .082488 Tw (the data efficiently. An easy way to access the data is ) Tj 0 0 .501961 rg (MATLAB) Tj 0 0 0 rg (, but some people \(like me\) don't have it or) Tj T* 0 Tw (don't want to use it.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 393.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (If you want to use this package in your own python scripts you should read the section ) Tj 0 0 .501961 rg (Python API) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 375.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (The documentation on the provided script DyMatExport is in the section ) Tj 0 0 .501961 rg (DyMatExport) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 342.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (2   Author and License) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 312.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .081318 Tw 12 TL /F1 10 Tf 0 0 0 rg (DyMat was developed by Joerg Raedler \() Tj 0 0 .501961 rg (joerg@j-raedler.de) Tj 0 0 0 rg (\). The code is released under the terms of the) Tj T* 0 Tw 0 0 .501961 rg (BSD License) Tj 0 0 0 rg (, which allows the free usage, distribution and enhancement of this code.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 279.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (3   Dependencies) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 267.0236 cm
+Q
+q
+1 0 0 1 62.69291 267.0236 cm
+Q
+q
+1 0 0 1 62.69291 249.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (1.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Python ) Tj 0 0 0 rg (2.5 or higher \(DyMatExport needs Python 2.7 or higher\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 249.0236 cm
+Q
+q
+1 0 0 1 62.69291 249.0236 cm
+Q
+q
+1 0 0 1 62.69291 231.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (2.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (SciPy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 231.0236 cm
+Q
+q
+1 0 0 1 62.69291 231.0236 cm
+Q
+q
+1 0 0 1 62.69291 201.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.603828 Tw 12 TL /F1 10 Tf 0 0 0 rg (For MS Windows you may consider using the excellent distribution ) Tj 0 0 .501961 rg (python\(x,y\)) Tj 0 0 0 rg (, which includes almost) Tj T* 0 Tw (everything you will ever need for scientific computing with python.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 168.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (4   Installation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 138.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .163318 Tw 12 TL /F1 10 Tf 0 0 0 rg (The installation process uses the ) Tj 0 0 .501961 rg (distutils ) Tj 0 0 0 rg (package which is included in standard python distribution. In the) Tj T* 0 Tw (base folder of this package call:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 104.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 24 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (python setup.py install) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 84.82362 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (to install everything. Have a look at the distutils documentation for more options.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+% 'R48': class PDFStream 
+48 0 obj
+% page stream
+<< /Length 851 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 744.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (5   DyMatExport) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 714.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (5.1   Exploring a file) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 696.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ncvjsjklfvsdjk) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 666.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (5.2   Exporting variables) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 648.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (jhgcjsagcfasd) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 615.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (6   Python API) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 597.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (cjnjksd) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+% 'R49': class PDFPageLabels 
+49 0 obj
+% Document Root
+<< /Nums [ 0
+ 50 0 R
+ 1
+ 51 0 R ] >>
+endobj
+% 'R50': class PDFPageLabel 
+50 0 obj
+% None
+<< /S /D
+ /St 1 >>
+endobj
+% 'R51': class PDFPageLabel 
+51 0 obj
+% None
+<< /S /D
+ /St 2 >>
+endobj
+xref
+0 52
+0000000000 65535 f
+0000000113 00000 n
+0000000234 00000 n
+0000000399 00000 n
+0000000587 00000 n
+0000000828 00000 n
+0000001069 00000 n
+0000001310 00000 n
+0000001551 00000 n
+0000001792 00000 n
+0000002033 00000 n
+0000002275 00000 n
+0000002517 00000 n
+0000002760 00000 n
+0000003003 00000 n
+0000003246 00000 n
+0000003489 00000 n
+0000003732 00000 n
+0000003975 00000 n
+0000004218 00000 n
+0000004460 00000 n
+0000004730 00000 n
+0000004978 00000 n
+0000005219 00000 n
+0000005465 00000 n
+0000005708 00000 n
+0000005950 00000 n
+0000006195 00000 n
+0000006465 00000 n
+0000006707 00000 n
+0000006948 00000 n
+0000007192 00000 n
+0000007444 00000 n
+0000007604 00000 n
+0000008142 00000 n
+0000008423 00000 n
+0000008582 00000 n
+0000008849 00000 n
+0000008974 00000 n
+0000009212 00000 n
+0000009515 00000 n
+0000009788 00000 n
+0000010061 00000 n
+0000010373 00000 n
+0000010663 00000 n
+0000010966 00000 n
+0000011198 00000 n
+0000011315 00000 n
+0000018055 00000 n
+0000019008 00000 n
+0000019114 00000 n
+0000019191 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
+ [(@}\351\301\301\036\032/\002l\224\320\243\324k\000) (@}\351\301\301\036\032/\002l\224\320\243\324k\000)] 
+
+ /Info 36 0 R
+ /Root 35 0 R
+ /Size 52 >>
+startxref
+19238
+%%EOF
