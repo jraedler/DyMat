@@ -21,6 +21,21 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+import csv, numpy
 
 def export(dm, varList=None, fileName=None, formatOptions=None):
-    pass
+    """Export DyMat data to a CSV file"""
+
+    if not fileName:
+        fileName = dm.fileName+'.csv'
+    oFile = open(fileName, 'wb')
+    csvWriter = csv.writer(oFile)
+    
+    vDict = dm.sortByBlocks(varList)
+    for vList in vDict.values():
+        vData = dm.getVarArray(vList)
+        vList.insert(0, dm._absc[0])
+        csvWriter.writerow(vList)
+        csvWriter.writerows(numpy.transpose(vData))
+    
+    oFile.close()

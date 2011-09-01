@@ -23,10 +23,31 @@
 
 
 def export(dm, varList=None, fileName=None, formatOptions=None):
+    """Export DyMat data to files readable by gnuplot"""
+
     if not fileName:
         fileName = dm.fileName+'.gpd'
-    vData = dm.getVarArray(varList)
+
+
+    vList = dm.sortByBlocks(varList)
+    if len(vList) > 1:
+        raise Exception("Variables have different blocks - can't export to Gnuplot format!")
+    else:
+        varList = vList[vList.keys[0]]
+
+    nd = [(n, dm.description(n)) for n in varList]
+    nd.insert(0, dm._absc)
+
     oFile = open(fileName, 'w')
+
+    oFile.write('### file generated with DyMat from %s\n' % dm.fileName)
+    for i in range(len(nd)):
+        n, d = nd[i]
+        oFile.write('# %3i %s - %s\n' % (i+1, n, d))
+
+    vData = dm.getVarArray(varList)
+
     for i in range(vData.shape[1]):
         oFile.write('\t'.join(['%g'%v for v in vData[:,i]]) + '\n')
+
     oFile.close()

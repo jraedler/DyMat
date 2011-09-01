@@ -21,6 +21,28 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+import scipy.io.netcdf
 
 def export(dm, varList=None, fileName=None, formatOptions=None):
-    pass
+    """Export DyMat data to a netCDF file"""
+
+    if not fileName:
+        fileName = dm.fileName+'.nc'
+
+    ncFile = scipy.io.netcdf.netcdf_file(fileName, 'w')
+    ncFile.comment = 'file generated with DyMat from %s' % dm.fileName
+
+    vList = dm.sortByBlocks(varList)
+    for block in vList:
+        a, aname, adesc = dm.abscissa(block)
+        dim = '%s_%02i' % (aname, block)
+        ncFile.createDimension(dim, a.shape[0])
+        av = ncFile.createVariable(dim, 'd', (dim,))
+        av.description = adesc
+        av.block = block
+        av[:] = a
+        for vn in vList[block]:
+            v = ncFile.createVariable(vn, 'd', (dim,))
+            v.description = dm.description(vn)
+            v.block = block
+            v[:] = dm.data(vn)

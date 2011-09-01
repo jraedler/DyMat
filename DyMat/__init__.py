@@ -92,6 +92,16 @@ class DyMatFile:
         """Return data block which contains the variable"""
         return self._vars[varName][1]
 
+    def sortByBlocks(self, varList):
+        """Return dictionary with variables in varList sorted by the block number"""
+        vl = [(v, self._vars[v][1]) for v in varList]
+        vDict = {}
+        for bl in self._blocks:
+            l = [v for v,b in vl if b==bl]
+            if l:
+                vDict[bl] = l
+        return vDict
+
     def size(self, blockOrName):
         """Return the number of rows of a variable or block"""
         try:
@@ -138,9 +148,9 @@ class DyMatFile:
         """Write the values of a variable and its abscissa to stdout"""
         d = self.data(varName)
         a, aname, tmp = self.abscissa(varName)
-        print '# %s | %s' % (aname, varName)
+        print('# %s | %s' % (aname, varName))
         for i in range(d.shape[0]):
-            print '%f %g' % (a[i], d[i])
+            print('%f %g' % (a[i], d[i]))
 
 
 # for compatibility with old versions

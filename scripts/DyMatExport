@@ -38,7 +38,7 @@ grp.add_argument('-m', '--list-formats', action='store_true', help='list support
 grp.add_argument('-e', '--export', nargs=1, metavar='VARLIST', help='export these variables')
 grp.add_argument('-x', '--export-file', nargs=1, metavar="FILE", help='export variables listed in this file')
 
-arg.add_argument('-o', '--outfile', nargs=1, help='write output to this file')
+arg.add_argument('-o', '--outfile', nargs=1, help='write exported data to this file')
 arg.add_argument('-f', '--format', nargs=1, help='export data in this format')
 arg.add_argument('-p', '--options', nargs=1, help='export options specific to export format')
 
@@ -47,31 +47,25 @@ arg.add_argument('matfile', nargs=1, help='MAT-file')
 pargs = arg.parse_args()
 
 dm = DyMat.DyMatFile(pargs.matfile[0])
-if pargs.outfile:
-    outFileName = pargs.outfile[0]
-    outFile = open(outFileName, 'w')
-else:
-    outFileName = None
-    outFile = sys.stdout
 
 if pargs.info:
     blocks = dm.blocks()
     blocks.sort()
     for b in blocks:
-        outFile.write('Block %02d:\n' % b)
+        print('Block %02d:' % b)
         s = dm.mat['data_%d' % (b)].shape
         v = len(dm.names(b))
-        outFile.write('  %d variables point to %d columns with %d timesteps\n' % (v, s[0]-1, s[1]))
+        print('  %d variables point to %d columns with %d timesteps' % (v, s[0]-1, s[1]))
 
 elif pargs.list:
     for n in dm.names():
-        outFile.write(n + '\n')
+        print(n)
 
 elif pargs.descriptions:
     nn = dm.names()
     nlen = max((len(n) for n in nn))
-    lines = [("%s | %02d | %s\n" % (n.ljust(nlen), dm.block(n), dm.description(n))) for n in nn]
-    outFile.writelines(lines)
+    for n in dm.names():
+        print("%s | %02d | %s" % (n.ljust(nlen), dm.block(n), dm.description(n)))
 
 elif pargs.tree:
     t = dm.nameTree()
@@ -83,31 +77,35 @@ elif pargs.tree:
         for elem in branch:
             sub = branch[elem]
             if isinstance(sub, dict):
-                outFile.write(tmp+elem+'\n')
+                print(tmp+elem)
                 printBranch(sub, level+1)
             else:
-                outFile.write('%s%s (%s)\n' % (tmp, elem, sub))
+                print('%s%s (%s)' % (tmp, elem, sub))
     printBranch(t, 0)
 
 elif pargs.shared_data:
     v = pargs.shared_data[0]
     sd = dm.sharedData(v)
     if sd:
-        outFile.write(v+'\n')
+        print(v)
         for n, s in sd:
-            outFile.write('    = % 2d * %s%s\n' % (s, n))
+            print('    = % 2d * %s%s' % (s, n))
 
 # FIXME: this should work without providing a filename
 elif pargs.list_formats:
     import DyMat.Export
     for n in DyMat.Export.formats:
-        outFile.write('%s : %s\n' % (n, DyMat.Export.formats[n]))
+        print('%s : %s' % (n, DyMat.Export.formats[n]))
 
 else: # pargs.export or pargs.export_file
     if pargs.export:
         varList = [v.strip() for v in pargs.export[0].split(',')]
     else:
-        varList = [l.split('|')[0].strip() for l in open(pargs.export_file[0], 'r')]
+        varList = [l.split('|')[0].strip() for l in open(pargs.export_file[0], 'r') if l]
+    if pargs.outfile:
+        outFileName = pargs.outfile[0]
+    else:
+        outFileName = None
     options = {}
     if pargs.options:
         tmp = [v.strip().split('=') for v in pargs.export[0].split(',')]
