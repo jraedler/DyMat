@@ -14,7 +14,7 @@ setup(
     keywords = "modelica dymola openmodelica mat",
     url = "http://www.j-raedler.de/projects/DyMat/",
     packages = ['DyMat', 'DyMat.Export', 'DyMat.Plot'],
-    scripts = ['scripts/DyMatExport'],
+    scripts = ['scripts/DyMatExport.py'],
     long_description = read('README.txt'),
     classifiers = [
         "Development Status :: 4 - Beta",

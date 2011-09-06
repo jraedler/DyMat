@@ -23,7 +23,7 @@
 
 import csv, numpy
 
-def export(dm, varList=None, fileName=None, formatOptions=None):
+def export(dm, varList, fileName=None, formatOptions=None):
     """Export DyMat data to a CSV file"""
 
     if not fileName:

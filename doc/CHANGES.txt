@@ -1,0 +1,8 @@
+Changes:
+========
+
+2011-09-06:
+-----------
+ * changed script name DyMatExport to DyMatExport.py
+ * added __getitem__ to DyMatFile
+ * more documentation
