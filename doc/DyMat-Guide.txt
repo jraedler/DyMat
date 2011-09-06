@@ -298,7 +298,7 @@ are the path elements, values are sub-dictionaries or variable names.
 :Returns:
     - dictionary
 
-DyMatFile.getVarArray(self, varNames \|, withAbscissa=True)
+DyMatFile.getVarArray(varNames \|, withAbscissa=True)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Return the values of all variables in varNames combined as a 2d-array. If 
 withAbscissa is True, include abscissa's values first. 
@@ -310,7 +310,7 @@ withAbscissa is True, include abscissa's values first.
 :Returns:
     - numpy.ndarray
 
-DyMatFile.writeVar(self, varName)
+DyMatFile.writeVar(varName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Write the values of the abscissa and the variabale to stdout. The text format 
 is compatible with gnuplot. For more options use DyMat.Export instead.
