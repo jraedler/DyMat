@@ -89,7 +89,7 @@ class DyMatFile:
         di = 'data_%d' % (d)
         dd = self.mat[di][c]
         if s < 0:
-            dd *= -1
+            dd = dd * -1
         return dd
 
     # add a dictionary-like interface
