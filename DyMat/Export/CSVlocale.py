@@ -21,33 +21,25 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-import sys, Gnuplot, CSV, netCDF, MATLAB, CSVlocale
+import locale, os
 
-formats = {
-    'CSV' : 'Comma separated values - read by many spreadsheet programs',
-    'CSVlocale' : 'Simple CSV with locale number formatting',
-    'Gnuplot' : 'File format read by gnuplot, a famous plotting package',
-    'netCDF' : 'netCDF is a format for structured multi-dimensional data',
-    'MATLAB' : 'MATLAB files are binary files of matrix data',
-    }
+def export(dm, varList, fileName=None, formatOptions=None):
+    """Export DyMat data to a CSV file using locale number formatting"""
 
-def export(fmt, dm, varList, fileName=None, formatOptions=None):
-    """Export the data of the DyMatFile object `dm` to a data file. `fmt` is the 
-    format string, `varList` the list of variables to export. If no `fileName` is 
-    given, it will be derived from the mat file name. `formatOptions` will be used 
-    in later versions.
-
-    :Arguments:
-        - string: fmt
-        - DyMolaMat object: dm
-        - sequence of strings: varList
-        - optional string: fileName
-        - optional dictionary: formatOptions
-        
-    :Returns:
-        - None
-    """
-    if not fmt in formats:
-        raise Exception('Unknown export format specified!')
-    m = sys.modules['DyMat.Export.%s' % fmt]
-    return m.export(dm, varList, fileName,formatOptions)
+    if not fileName:
+        fileName = dm.fileName+'.csv'
+    oFile = open(fileName, 'wb')
+    
+    locale.setlocale(locale.LC_NUMERIC, locale.getdefaultlocale())
+    delimiter = formatOptions.get('delimiter', ';')
+    newline   = formatOptions.get('newline', os.linesep)
+    
+    vDict = dm.sortByBlocks(varList)
+    for vList in vDict.values():
+        vData = dm.getVarArray(vList)
+        vList.insert(0, dm._absc[0])
+        oFile.write(delimiter.join(['"%s"'%n for n in vList])+newline)
+        for i in range(vData.shape[1]):
+            oFile.write(delimiter.join([locale.format('%g', n) for n in vData[:,i]])+newline)
+    
+    oFile.close()

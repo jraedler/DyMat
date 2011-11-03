@@ -31,6 +31,7 @@ import numpy, scipy.io
 # extract strings from the matrix
 strMat = lambda a: [''.join(s).rstrip() for s in zip(*a)]
 
+
 class DyMatFile:
     """A result file written by Dymola or OpenModelica"""
 

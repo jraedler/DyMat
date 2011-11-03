@@ -2,7 +2,7 @@
  DyMat - User Manual
 =====================
 -------------
-version 0.3
+version 0.4
 -------------
 
 .. Note: this text is written using the "reStructuredText" format. You
@@ -99,6 +99,12 @@ CSV
 ---
 This is a well-known exchange format for tabular data. Variables are saved in 
 columns with a header. Multi-block data will simply be appended.
+
+CSVlocale
+---------
+CSV with a number format respecting the default language setting. This may be 
+used to export data to EXCEL, OpenOffice or LibreOffice with different number 
+formats.
 
 Gnuplot
 -------

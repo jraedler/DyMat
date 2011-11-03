@@ -108,7 +108,7 @@ else: # pargs.export or pargs.export_file
         outFileName = None
     options = {}
     if pargs.options:
-        tmp = [v.strip().split('=') for v in pargs.export[0].split(',')]
+        tmp = [v.strip().split('=') for v in pargs.options[0].split(',')]
         for x in tmp:
             options[x[0]] = x[1]
     import DyMat.Export
