@@ -29,11 +29,7 @@ import numpy, scipy.io
 
 
 # extract strings from the matrix
-def strMat(a):
-    sl = max([len(s) for s in a])
-    A = [l.ljust(sl, ' ') for l in a]
-    return [''.join(s).rstrip() for s in zip(*A)]
-
+strMat = lambda a: [''.join(s).rstrip() for s in zip(*a)]
 
 class DyMatFile:
     """A result file written by Dymola or OpenModelica"""
@@ -41,7 +37,7 @@ class DyMatFile:
     def __init__(self, fileName):
         """Open the file fileName and parse contents"""
         self.fileName = fileName
-        self.mat = scipy.io.loadmat(fileName)
+        self.mat = scipy.io.loadmat(fileName, chars_as_strings=False)
         self._vars = {}
         self._blocks = []
         names = strMat(self.mat['name']) # names
