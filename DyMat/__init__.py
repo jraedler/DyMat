@@ -21,14 +21,18 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-__version__='0.3'
+__version__='0.4'
 __author__='Joerg Raedler (joerg@j-raedler.de)'
 __license__='BSD License (http://www.opensource.org/licenses/bsd-license.php)'
 
 import numpy, scipy.io
 
+
 # extract strings from the matrix
-_trans = lambda a: [''.join(s).rstrip() for s in zip(*a)]
+def strMat(a):
+    sl = max([len(s) for s in a])
+    A = [l.ljust(sl, ' ') for l in a]
+    return [''.join(s).rstrip() for s in zip(*A)]
 
 
 class DyMatFile:
@@ -40,8 +44,8 @@ class DyMatFile:
         self.mat = scipy.io.loadmat(fileName)
         self._vars = {}
         self._blocks = []
-        names = _trans(self.mat['name']) # names
-        descr = _trans(self.mat['description']) # descriptions
+        names = strMat(self.mat['name']) # names
+        descr = strMat(self.mat['description']) # descriptions
         for i in range(len(names)):
             d = self.mat['dataInfo'][0][i] # data block
             x = self.mat['dataInfo'][1][i]
