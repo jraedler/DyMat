@@ -89,7 +89,7 @@ elif pargs.shared_data:
     if sd:
         print(v)
         for n, s in sd:
-            print('    = % 2d * %s%s' % (s, n))
+            print('    = % 2d * %s' % (s, n))
 
 # FIXME: this should work without providing a filename
 elif pargs.list_formats:

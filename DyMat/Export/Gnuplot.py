@@ -33,7 +33,7 @@ def export(dm, varList, fileName=None, formatOptions=None):
     if len(vList) > 1:
         raise Exception("Variables have different blocks - can't export to Gnuplot format!")
     else:
-        varList = vList[vList.keys[0]]
+        varList = vList[vList.keys()[0]]
 
     nd = [(n, dm.description(n)) for n in varList]
     nd.insert(0, dm._absc)
