@@ -31,7 +31,7 @@ formats = {
     'MATLAB' : 'MATLAB files are binary files of matrix data',
     }
 
-def export(fmt, dm, varList, fileName=None, formatOptions=None):
+def export(fmt, dm, varList, fileName=None, formatOptions={}):
     """Export the data of the DyMatFile object `dm` to a data file. `fmt` is the 
     format string, `varList` the list of variables to export. If no `fileName` is 
     given, it will be derived from the mat file name. `formatOptions` will be used 
