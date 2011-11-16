@@ -23,7 +23,7 @@
 
 import locale, os
 
-def export(dm, varList, fileName=None, formatOptions=None):
+def export(dm, varList, fileName=None, formatOptions={}):
     """Export DyMat data to a CSV file using locale number formatting"""
 
     if not fileName:

@@ -22,7 +22,7 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-def export(dm, varList, fileName=None, formatOptions=None):
+def export(dm, varList, fileName=None, formatOptions={}):
     """Export DyMat data to files readable by gnuplot"""
 
     if not fileName:
