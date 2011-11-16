@@ -35,14 +35,14 @@ def export(dm, varList, fileName=None, formatOptions=None):
     vList = dm.sortByBlocks(varList)
     for block in vList:
         a, aname, adesc = dm.abscissa(block)
-        dim = '%s_%02i' % (aname, block)
+        dim = '%s_%02i' % (aname.encode('UTF8'), block)
         ncFile.createDimension(dim, a.shape[0])
         av = ncFile.createVariable(dim, 'd', (dim,))
         av.description = adesc
         av.block = block
         av[:] = a
         for vn in vList[block]:
-            v = ncFile.createVariable(vn, 'd', (dim,))
-            v.description = dm.description(vn)
+            v = ncFile.createVariable(vn.encode('UTF8'), 'd', (dim,))
+            v.description = dm.description(vn.encode('UTF8'))
             v.block = block
             v[:] = dm.data(vn)

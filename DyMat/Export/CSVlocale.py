@@ -27,7 +27,7 @@ def export(dm, varList, fileName=None, formatOptions=None):
     """Export DyMat data to a CSV file using locale number formatting"""
 
     if not fileName:
-        fileName = dm.fileName+'.csv'
+        fileName = dm.fileName+'.l.csv'
     oFile = open(fileName, 'wb')
     
     locale.setlocale(locale.LC_NUMERIC, locale.getdefaultlocale())
