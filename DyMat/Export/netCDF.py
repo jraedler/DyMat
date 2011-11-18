@@ -21,7 +21,13 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-import scipy.io.netcdf, string
+try:
+    import scipy.io.netcdf as nc
+except:
+    import pupynere as nc
+
+import string
+
 
 class NameConverter:
     allow0 = string.letters + string.digits + '_'
@@ -51,7 +57,7 @@ def export(dm, varList, fileName=None, formatOptions={}):
     if not fileName:
         fileName = dm.fileName+'.nc'
 
-    ncFile = scipy.io.netcdf.netcdf_file(fileName, 'w')
+    ncFile = nc.netcdf_file(fileName, 'w')
     ncFile.comment = 'file generated with DyMat from %s' % dm.fileName
 
     convertNames = formatOptions.get('convertNames', False)
@@ -65,7 +71,7 @@ def export(dm, varList, fileName=None, formatOptions={}):
         dim = '%s_%02i' % (aname.encode('UTF8'), block)
         ncFile.createDimension(dim, a.shape[0])
         av = ncFile.createVariable(dim, 'd', (dim,))
-        av.description = adesc
+        av.description = adesc.encode('UTF8')
         av.block = block
         av[:] = a
         for vn in vList[block]:
