@@ -80,7 +80,9 @@ def export(dm, varList, fileName=None, formatOptions={}):
             else:
                 name = vn
             v = ncFile.createVariable(name, 'd', (dim,))
-            v.description = dm.description(vn).encode('UTF8')
+            d = dm.description(vn)
+            if d:
+                v.description = d.encode('UTF8')
             if convertNames:
                 v.original_name = vn.encode('UTF8')
             v.block = block
