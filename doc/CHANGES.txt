@@ -3,7 +3,7 @@ Changes:
 
 2011-11-03:
 -----------
- * fixed a bug in the conversion from amtrix to string list
+ * fixed a bug in the conversion from matrix to string list
  * version 0.4
  * added export format CSVlocale
 
