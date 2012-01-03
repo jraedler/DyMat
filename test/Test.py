@@ -27,7 +27,9 @@ import DyMat, DyMat.Export, random
 
 files = ('DoublePendulum_Dymola-7.4.mat', 
          'DoublePendulum_OpenModelica-1.8.mat',
-         'DoublePendulum_Dymola-2012.mat')
+         'DoublePendulum_Dymola-2012.mat',
+         'DoublePendulum_Dymola-2012-SaveAs.mat',
+         'DoublePendulum_Dymola-2012-SaveAsPlotted.mat' )
 
 formats = DyMat.Export.formats.keys()
 
