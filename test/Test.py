@@ -38,8 +38,10 @@ for fi in files:
     # open file
     df = DyMat.DyMatFile(fi)
     
-    # pick 30 random variable names
-    va = random.sample(df.names(), 30)
+    # pick a maximum of 30 random variable names
+    n = df.names()
+    x = min(len(n), 30)
+    va = random.sample(df.names(), x)
     
     # do export
     for fo in formats:
