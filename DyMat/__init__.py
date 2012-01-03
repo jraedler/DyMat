@@ -82,6 +82,8 @@ class DyMatFile:
                             self.mat[b] = self.mat[b].transpose()
                     else:
                         self._absc = (names[i], descr[i])
+            else:
+                raise Exception('File structure not supported!')
         elif fileInfo[1] == '1.0':
             # files generated with dymola, save as..., only plotted ...
             # fake the structure of a 1.1 transposed file
@@ -92,6 +94,8 @@ class DyMatFile:
             self._absc = (names[0], '')
             for i in range(1, len(names)):
                 self._vars[names[i]] = ('', 0, i, 1)
+        else:
+            raise Exception('File structure not supported!')
     
             
     def blocks(self):
