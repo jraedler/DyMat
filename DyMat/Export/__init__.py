@@ -21,7 +21,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-import sys, Gnuplot, CSV, netCDF, MATLAB, CSVlocale
+import sys, Gnuplot, CSV, netCDF, MATLAB, CSVlocale, HDF5
 
 formats = {
     'CSV' : 'Comma separated values - read by many spreadsheet programs',
@@ -29,6 +29,7 @@ formats = {
     'Gnuplot' : 'File format read by gnuplot, a famous plotting package',
     'netCDF' : 'netCDF is a format for structured multi-dimensional data',
     'MATLAB' : 'MATLAB files are binary files of matrix data',
+    'HDF5' : 'HDF5 is a format for structured multi-dimensional data (needs h5py)',
     }
 
 def export(fmt, dm, varList, fileName=None, formatOptions={}):

@@ -1,6 +1,10 @@
 Changes:
 ========
 
+2012-12-28:
+-----------
+ * added a simple implementation of HFD5 output
+
 2011-11-03:
 -----------
  * fixed a bug in the conversion from matrix to string list

@@ -125,6 +125,12 @@ data. You may use this option to prepare files for the ncDataReader2_. This way
 you can use the results of simulations as (interpolated) input data for other 
 simulations.
 
+HDF5
+----
+HDF5 is a very efficient binary format for structured multi-dimensional
+data. You need the package h5py to use this export format.
+
+
 DyMatExport.py
 ==============
 This script is mainly a command-line interface for the python functions in this 
