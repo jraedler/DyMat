@@ -28,7 +28,7 @@ def export(dm, varList, fileName=None, formatOptions={}):
 
     if not fileName:
         fileName = dm.fileName+'.l.csv'
-    oFile = open(fileName, 'wb')
+    oFile = open(fileName, 'w')
     
     locale.setlocale(locale.LC_NUMERIC, locale.getdefaultlocale())
     delimiter = formatOptions.get('delimiter', ';')

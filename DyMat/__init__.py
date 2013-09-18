@@ -32,6 +32,9 @@ import numpy, scipy.io
 strMatNormal = lambda a: [''.join(s).rstrip() for s in a]
 strMatTrans  = lambda a: [''.join(s).rstrip() for s in zip(*a)]
 
+# cmp function - gone in Python 3
+sgn = lambda a,b: (a > b) - (a < b)
+
 
 class DyMatFile:
     """A result file written by Dymola or OpenModelica"""
@@ -57,7 +60,7 @@ class DyMatFile:
                     d = self.mat['dataInfo'][0][i] # data block
                     x = self.mat['dataInfo'][1][i]
                     c = abs(x)-1  # column
-                    s = cmp(x, 0) # sign
+                    s = sgn(x, 0) # sign
                     if c:
                         self._vars[names[i]] = (descr[i], d, c, s)
                         if not d in self._blocks:
@@ -73,7 +76,7 @@ class DyMatFile:
                     d = self.mat['dataInfo'][i][0] # data block
                     x = self.mat['dataInfo'][i][1]
                     c = abs(x)-1  # column
-                    s = cmp(x, 0) # sign
+                    s = sgn(x, 0) # sign
                     if c:
                         self._vars[names[i]] = (descr[i], d, c, s)
                         if not d in self._blocks:

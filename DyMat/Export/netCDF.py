@@ -30,7 +30,7 @@ import string
 
 
 class NameConverter:
-    allow0 = string.letters + string.digits + '_'
+    allow0 = string.ascii_letters + string.digits + '_'
     allow  = allow0 + '@+-.'
     repl   = '_'
     
