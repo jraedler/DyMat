@@ -71,9 +71,9 @@ def export(dm, varList, fileName=None, formatOptions={}):
     vList = dm.sortByBlocks(varList)
     for block in vList:
         a, aname, adesc = dm.abscissa(block)
-        dim = '%s_%02i' % (aname.encode('UTF8'), block)
+        dim = '%s_%02i' % (aname, block)
         av = h5File.create_dataset(dim, data=a)
-        av.attrs['description'] = adesc.encode('UTF8')
+        av.attrs['description'] = str(adesc)
         av.attrs['block'] = block
         for vn in vList[block]:
             if convertNames:
@@ -83,8 +83,8 @@ def export(dm, varList, fileName=None, formatOptions={}):
             v = h5File.create_dataset(name, data=dm.data(vn))
             d = dm.description(vn)
             if d:
-                v.attrs['description'] = d.encode('UTF8')
+                v.attrs['description'] = str(d)
             if convertNames:
-                v.attrs['original_name'] = vn.encode('UTF8')
+                v.attrs['original_name'] = str(vn)
             v.attrs['block'] = block
     h5File.close()

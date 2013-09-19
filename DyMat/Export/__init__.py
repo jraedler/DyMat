@@ -28,6 +28,7 @@ formats = {
     'CSVlocale' : 'Simple CSV with locale number formatting',
     'Gnuplot' :   'File format read by gnuplot, a famous plotting package',
     'netCDF' :    'netCDF is a format for structured multi-dimensional data',
+    'netCDF4' :   'netCDF is a format for structured multi-dimensional data (needs python-netCDF4)',
     'MATLAB' :    'MATLAB files are binary files of matrix data',
     'HDF5' :      'HDF5 is a format for structured multi-dimensional data (needs h5py)',
     }

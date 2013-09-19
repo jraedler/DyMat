@@ -21,17 +21,16 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-__version__='0.5'
+__version__='0.6'
 __author__='Joerg Raedler (joerg@j-raedler.de)'
 __license__='BSD License (http://www.opensource.org/licenses/bsd-license.php)'
 
-import numpy, scipy.io
-
+import sys, numpy, scipy.io
 
 # extract strings from the matrix
 strMatNormal = lambda a: [''.join(s).rstrip() for s in a]
 strMatTrans  = lambda a: [''.join(s).rstrip() for s in zip(*a)]
-
+    
 # cmp function - gone in Python 3
 sgn = lambda a,b: (a > b) - (a < b)
 
@@ -47,7 +46,7 @@ class DyMatFile:
         self._blocks = []
         try:
             fileInfo = strMatNormal(self.mat['Aclass'])
-        except:
+        except KeyError:
             raise Exception('File structure not supported!')
         if fileInfo[1] == '1.1':
             if fileInfo[3] == 'binTrans':
