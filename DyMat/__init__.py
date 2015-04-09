@@ -21,7 +21,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-__version__='0.6'
+__version__='0.7'
 __author__='Joerg Raedler (joerg@j-raedler.de)'
 __license__='BSD License (http://www.opensource.org/licenses/bsd-license.php)'
 
