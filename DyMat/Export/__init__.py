@@ -21,16 +21,20 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-import sys, Gnuplot, CSV, netCDF, MATLAB, CSVlocale, HDF5
+import sys, importlib
 
 formats = {
-    'CSV' : 'Comma separated values - read by many spreadsheet programs',
+    'CSV' :       'Comma separated values - read by many spreadsheet programs',
     'CSVlocale' : 'Simple CSV with locale number formatting',
-    'Gnuplot' : 'File format read by gnuplot, a famous plotting package',
-    'netCDF' : 'netCDF is a format for structured multi-dimensional data',
-    'MATLAB' : 'MATLAB files are binary files of matrix data',
-    'HDF5' : 'HDF5 is a format for structured multi-dimensional data (needs h5py)',
+    'Gnuplot' :   'File format read by gnuplot, a famous plotting package',
+    'netCDF' :    'netCDF is a format for structured multi-dimensional data',
+    'netCDF4' :   'netCDF is a format for structured multi-dimensional data (needs python-netCDF4)',
+    'MATLAB' :    'MATLAB files are binary files of matrix data',
+    'HDF5' :      'HDF5 is a format for structured multi-dimensional data (needs h5py)',
     }
+
+loadedFormats = {}
+
 
 def export(fmt, dm, varList, fileName=None, formatOptions={}):
     """Export the data of the DyMatFile object `dm` to a data file. `fmt` is the 
@@ -50,5 +54,9 @@ def export(fmt, dm, varList, fileName=None, formatOptions={}):
     """
     if not fmt in formats:
         raise Exception('Unknown export format specified!')
-    m = sys.modules['DyMat.Export.%s' % fmt]
-    return m.export(dm, varList, fileName,formatOptions)
+    
+    if not fmt in loadedFormats:
+        loadedFormats[fmt] = importlib.import_module('.%s' % fmt, package='DyMat.Export')
+
+    return loadedFormats[fmt].export(dm, varList, fileName,formatOptions)
+

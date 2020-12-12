@@ -21,16 +21,18 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-__version__='0.5'
+__version__='0.7'
 __author__='Joerg Raedler (joerg@j-raedler.de)'
 __license__='BSD License (http://www.opensource.org/licenses/bsd-license.php)'
 
-import numpy, scipy.io
-
+import sys, math, numpy, scipy.io
 
 # extract strings from the matrix
 strMatNormal = lambda a: [''.join(s).rstrip() for s in a]
 strMatTrans  = lambda a: [''.join(s).rstrip() for s in zip(*a)]
+    
+# sign = lambda x: cmp(x, 0)
+sign = lambda x: math.copysign(1.0, x)
 
 
 class DyMatFile:
@@ -44,7 +46,7 @@ class DyMatFile:
         self._blocks = []
         try:
             fileInfo = strMatNormal(self.mat['Aclass'])
-        except:
+        except KeyError:
             raise Exception('File structure not supported!')
         if fileInfo[1] == '1.1':
             if fileInfo[3] == 'binTrans':
@@ -57,7 +59,7 @@ class DyMatFile:
                     d = self.mat['dataInfo'][0][i] # data block
                     x = self.mat['dataInfo'][1][i]
                     c = abs(x)-1  # column
-                    s = cmp(x, 0) # sign
+                    s = sign(x)   # sign
                     if c:
                         self._vars[names[i]] = (descr[i], d, c, s)
                         if not d in self._blocks:
@@ -73,7 +75,7 @@ class DyMatFile:
                     d = self.mat['dataInfo'][i][0] # data block
                     x = self.mat['dataInfo'][i][1]
                     c = abs(x)-1  # column
-                    s = cmp(x, 0) # sign
+                    s = sign(x)   # sign
                     if c:
                         self._vars[names[i]] = (descr[i], d, c, s)
                         if not d in self._blocks:
