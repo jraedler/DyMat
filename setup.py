@@ -13,7 +13,7 @@ setup(
     license = "BSD",
     keywords = "modelica dymola openmodelica mat",
     url = "http://www.j-raedler.de/projects/DyMat/",
-    download_url = "https://bitbucket.org/jraedler/dymat/downloads/",
+    download_url = "https://github.com/jraedler/DyMat/",
     packages = ['DyMat', 'DyMat.Export'],
     scripts = ['scripts/DyMatExport.py'],
     long_description = read('README.txt'),
